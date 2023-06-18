@@ -1,0 +1,15 @@
+ramesh.setHealth(70);
+    ramesh.setLevel('B');
+    cout<<ramesh.getHealth()<<endl;
+    cout<<ramesh.getLevel()<<endl;
+    ramesh.level = 'A';
+    cout<<ramesh.level<<endl;
+    cout<<"-----------------------"<<endl;
+    Hero *b = new Hero;
+    b->setHealth(50);
+    b->level = 'Y'; 
+    cout<<(*b).getHealth()<<endl;
+    cout<<(*b).level<<endl;
+    cout<<"------------------------"<<endl;
+    cout<<b->level<<endl;
+    cout<<b->getHealth()<<endl;
