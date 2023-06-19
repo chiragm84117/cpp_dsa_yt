@@ -11,6 +11,7 @@ class Hero{
             cout<<"constructure call"<<endl;
         }
 
+        // parameter constructure
         Hero(int health){
             this->health = health;
         }

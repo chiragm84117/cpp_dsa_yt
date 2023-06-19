@@ -1,15 +1,16 @@
-ramesh.setHealth(70);
-    ramesh.setLevel('B');
-    cout<<ramesh.getHealth()<<endl;
-    cout<<ramesh.getLevel()<<endl;
-    ramesh.level = 'A';
-    cout<<ramesh.level<<endl;
-    cout<<"-----------------------"<<endl;
-    Hero *b = new Hero;
-    b->setHealth(50);
-    b->level = 'Y'; 
-    cout<<(*b).getHealth()<<endl;
-    cout<<(*b).level<<endl;
-    cout<<"------------------------"<<endl;
-    cout<<b->level<<endl;
-    cout<<b->getHealth()<<endl;
+Hero h1;
+    // h1.setHealth(50);
+    // h1.level = 'D';
+    // char name [7] = "chirag";
+    // h1.setName(name);
+    // h1.print();
+
+    // //  use default constructure
+    // Hero h2(h1);
+    // h2.print();
+
+    // h1.name[0] = 'l';
+
+    // //  shallow copy -- done when default constructure called
+    // h1.print();
+    // h2.print();
