@@ -1,0 +1,2 @@
+
+        curr->next = NULL;
