@@ -11,7 +11,7 @@ class Node{
         this->next = NULL;
     }
     ~Node(){
-        int value = this-> data;
+        // int value = this-> data;
         if(this->next != NULL){
             delete next;
             this->next = NULL;
@@ -80,7 +80,6 @@ void deleteNode(int position,Node* &head,Node* &tail){
             cnt++;
         }
         prev->next = curr->next;
-        curr->next = NULL;
         delete curr;
     }
 
