@@ -20,7 +20,7 @@ class Node{
 };
 
 bool isCurcular(Node* head){
-    if(head == head){
+    if(head == head->next){
         return true;
     }
 

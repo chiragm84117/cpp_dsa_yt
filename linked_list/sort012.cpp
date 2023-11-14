@@ -99,7 +99,7 @@ Node* sort(Node* head){
     }
     else{
         //for empty
-        zeroTAIL->next = twoHEAD->next;
+        zeroTAIL->next = oneHEAD->next;
     }
     oneTAIL->next = twoHEAD->next;
     twoTAIL->next=NULL;

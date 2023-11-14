@@ -1,21 +1,37 @@
 #include<iostream>
 using namespace std;
 
-int bubble_sort(int a[],int n){
+// int bubble_sort(int a[],int n){
     
-    for(int i=1;i<n;i++){  //this is from no of rounds;
-    bool swapp=false;
-        for(int j=0;j<n-i;j++){
+//     for(int i=1;i<n;i++){  //this is from no of rounds;
+//     bool swapp=false;
+//         for(int j=0;j<n-i;j++){
+//             if(a[j]>a[j+1]){
+//                 swap(a[j],a[j+1]);
+//                 swapp=true;
+//             }
+//         }
+//         if(swapp==false){
+//             break;
+//         }
+//     }
+
+// }
+
+int bubble_sort(int a[],int n){
+    for(int i=0;i<n-1;i++){
+        bool swapp = false;
+        for(int j=0;j<n-1;j++){
             if(a[j]>a[j+1]){
                 swap(a[j],a[j+1]);
-                swapp=true;
+                swap = true;
             }
         }
-        if(swapp==false){
+        if (swap == false){
+            //  this checking of false or true  done when the array got sorted in the middle of the process (full array [most important])
             break;
         }
     }
-
 }
 
 int main(){

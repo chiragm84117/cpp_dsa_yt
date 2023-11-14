@@ -3,13 +3,28 @@ using namespace std;
 
 // here we don't swap , we shift.
 
+// int insert_sort(int a[],int n){
+//     for(int i=1;i<n;i++){//no of round
+//     int temp = a[i];
+//     int j;
+//         for(j=i-1;j>=0;j--){
+//             if(temp<a[j]){
+//                 a[j+1]=a[j];
+//             }
+//             else{
+//                 break;
+//             }
+//         }
+//         a[j+1]=temp;
+//     }
+// }
+
 int insert_sort(int a[],int n){
-    for(int i=1;i<n;i++){//no of round
-    int temp = a[i];
-    int j;
+    for(int i=0;i<n;i++){
+        int j;
         for(j=i-1;j>=0;j--){
             if(temp<a[j]){
-                a[j+1]=a[j];
+                a[j+1] = a[j];
             }
             else{
                 break;

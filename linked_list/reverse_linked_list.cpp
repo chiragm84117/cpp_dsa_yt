@@ -17,23 +17,23 @@ void InsertHead(node* &Head,int d){
     Head = temp;
 } 
 
-// node* reverse(node* head){
-// // itreative
-//     if(head == NULL || head->next == NULL){
-//         return head;
-//     }
-//     node* prev = NULL;
-//     node* curr = head;
-//     node* forward = NULL;
-//     while(curr!=NULL){
-//         forward = curr->next;
-//         curr->next = prev;
-//         prev = curr;
-//         curr= forward;
-//     }
-//     return prev;
+node* reverse(node* head){
+// itreative
+    if(head == NULL || head->next == NULL){
+        return head;
+    }
+    node* prev = NULL;
+    node* curr = head;
+    node* forward = NULL;
+    while(curr!=NULL){
+        forward = curr->next;
+        curr->next = prev;
+        prev = curr;
+        curr= forward;
+    }
+    return prev;
 
-// }
+}
 
 void reverseRec(node* &head,node* curr, node* prev){
     if(curr == NULL){

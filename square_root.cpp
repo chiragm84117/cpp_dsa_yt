@@ -14,6 +14,7 @@ long long int binSearch(int n){
             if(sqr<n){
                 ans=mid;   //to get possible answer support if we have output as 5.4   as per int the output will be 5  to to store previos to wil int value it store as ans
                 s=mid+1;
+                
             }
             else{
                 e=mid-1;

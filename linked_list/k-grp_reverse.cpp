@@ -33,9 +33,9 @@ int count=0;
 
 while(count<k && curr!=NULL){
     next = curr->next;
-    curr -> next = NULL;
+    curr -> next = prev;
     prev = curr;
-    curr = curr->next;
+    curr = next;
 }
 
 if(next!=NULL){

@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 class Node{
     public:
     int data;
@@ -19,16 +20,6 @@ class Node{
 };
 
 
-Node* merge(Node* first,Node* second){
-    if(first==NULL){
-        return second;
-    }
-    if(second==NULL){
-        return first;
-    }
-
-    
-}
 
 int main(){
 
