@@ -4,7 +4,7 @@ using namespace std;
 
 int solve(int *arr, int n, int k) {
 
-    deque<int> maxi(k);
+    deque<int> maxi(k);  ///use to keep the track
     deque<int> mini(k);
 
     //Addition of first k size window

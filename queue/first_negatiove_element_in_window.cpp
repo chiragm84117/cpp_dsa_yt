@@ -7,7 +7,7 @@ vector<long long> printFirstNeg(long long int a[],long long int n,long long int 
     deque<long long int> dq;
     vector<long long> ans;
 
-// prcess fist window
+// process fist window
     for(int i=0;i<k;i++){
         if(a[i]<0){
             dq.push_back(i);

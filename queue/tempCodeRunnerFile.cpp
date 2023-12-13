@@ -1,7 +1,15 @@
-#include<iostream>
-#include<queue>
 
-using namespace std;
+    int ans = 0;
 
-int main(){
-    queue<int> q;
+    ans += arr[maxi.front()] + arr[mini.front()];
+
+    //remaining windows ko process karlo
+    for(int i=k; i<n; i++) {
+
+        
+
+        //next window
+
+        //removal
+        while(!maxi.empty() && i - maxi.front() <=k) {
+            maxi.pop_front();
